@@ -1,101 +1,121 @@
-import Image from "next/image";
+import { Briefcase, GraduationCap, Wrench, Code, Globe, MapPin, Mail, Phone, Linkedin } from 'lucide-react'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className="min-h-screen bg-gray-100 py-10 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+        <header className="bg-gradient-to-r from-indigo-600 to-blue-500 text-white p-8">
+          <h1 className="text-4xl font-bold">Zaheer Nadaf</h1>
+          <p className="mt-2 text-xl font-light">Cybersecurity and Ethical Hacking Professional</p>
+          <p className="mt-1 text-sm font-light">(Fresher)</p>
+        </header>
+        
+        <main className="p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="md:col-span-2">
+            <section className="mb-8">
+              <p className="text-gray-700 leading-relaxed">
+                A highly motivated and detail-oriented cybersecurity enthusiast with foundational knowledge in ethical hacking and network security. Passionate about safeguarding systems and data from cyber threats. Strong problem-solving skills and a keen interest in learning emerging cybersecurity technologies.
+              </p>
+            </section>
+          
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4 flex items-center text-indigo-600">
+                <Briefcase className="mr-2" size={24} /> Experience
+              </h2>
+              <div className="bg-gray-50 p-4 rounded-lg">
+                <h3 className="font-semibold text-lg mb-2">Self Experience</h3>
+                <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                  <li>Developed foundational knowledge in network security and vulnerability assessment during coursework.</li>
+                  <li>Developed a foundational understanding of network security protocols and encryption techniques.</li>
+                </ul>
+              </div>
+            </section>
+          
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4 flex items-center text-indigo-600">
+                <GraduationCap className="mr-2" size={24} /> Education
+              </h2>
+              <div className="space-y-4">
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h3 className="font-semibold text-lg mb-1">School</h3>
+                  <p className="text-gray-700">10th MSBSHSE in Shree Balaji Madhyamik Vidyalay, Ich.</p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h3 className="font-semibold text-lg mb-1">College</h3>
+                  <p className="text-gray-700">Diploma in Artificial Intelligence and Machine Learning</p>
+                  <p className="text-gray-600">Sharad Institute Of Technology, Polytechnic.</p>
+                </div>
+              </div>
+            </section>
+          </div>
+          
+          <div>
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4 flex items-center text-indigo-600">
+                <Wrench className="mr-2" size={24} /> Tools
+              </h2>
+              <ul className="space-y-2 text-gray-700">
+                {['Kali Linux', 'Metasploit Nmap', 'Wireshark', 'Burp Suite', 'OWASP ZAP', 'Nessus', 'Snort', 'Aircrack-ng'].map((tool, index) => (
+                  <li key={index} className="flex items-center">
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                    {tool}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4 flex items-center text-indigo-600">
+                <Code className="mr-2" size={24} /> Skills
+              </h2>
+              <ul className="space-y-2 text-gray-700">
+                {['Penetration Testing', 'Vulnerability Assessment', 'Networking Security', 'Linux/Unix Systems', 'Problem-Solving Skills', 'Antivirus Tools', 'Firewalls', 'Cryptography Basics'].map((skill, index) => (
+                  <li key={index} className="flex items-center">
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 flex items-center text-indigo-600">
+                <Globe className="mr-2" size={24} /> Languages
+              </h2>
+              <ul className="space-y-2 text-gray-700">
+                {['English', 'Hindi'].map((language, index) => (
+                  <li key={index} className="flex items-center">
+                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>
+                    {language}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </div>
+        </main>
+        
+        <footer className="bg-gray-800 text-white p-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="flex items-center">
+              <MapPin className="mr-2" size={18} />
+              <p>Ichalkaranji, Kolhapur, MH</p>
+            </div>
+            <div className="flex items-center">
+              <Mail className="mr-2" size={18} />
+              <p>zaheernadaf08@gmail.com</p>
+            </div>
+            <div className="flex items-center">
+              <Phone className="mr-2" size={18} />
+              <p>+91 88559-44455</p>
+            </div>
+            <div className="flex items-center">
+              <Linkedin className="mr-2" size={18} />
+              <a href="https://www.linkedin.com/in/zaheer-nadaf/" className="hover:underline">linkedin.com/in/zaheer-nadaf</a>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
-  );
+  )
 }
+
